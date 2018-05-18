@@ -1,0 +1,70 @@
+/*
+  Brand colors
+    #39A4FC blue / primary
+    #2182D5 blue darker / primary dark
+    #56E6BF teal / alternate
+    #33D5AE teal darker / alternate dark
+    #FD684A red / error
+    #FEDF52 yellow / warning
+    #7F42FB purple / fun ;)
+    #1A2634 dark / text
+    #7c858d faded / secondary text
+    #f5f5f5 light grey / borders
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #1A2634;
+}
+
+.logo {
+  margin-bottom: 1em;
+}
+
+.app {
+  height: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2em;
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.update-list {
+
+}
+
+.update {
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  border: 2px solid #f5f5f5;
+}
+
+.update-contents {
+  padding: 1em;
+}
+
+.update-text {}
+
+.update-image {}
+
+.update-info {}
+
+.analytics-summary {}
