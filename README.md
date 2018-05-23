@@ -50,7 +50,9 @@ We expect these tasks to take about 4 hours, but they may take less for you. If 
 
 ### How to complete the exercise
 
-As your complete parts of the exercise, please use git to commit your code as you would normally work on a project. This is helpful component to see how you work as well. When you are complete, you can submit your work by zipping your the `buffer-code-exercise-front-end` directory then emailing to us. You can use Mac's "create archive" feature, Window's "compressed (zipped) folder," or the zip cli on Linux.
+As your complete parts of the exercise, please use git to commit your code as you would normally work on a project. This is helpful component to see how you work as well.
+
+When you are complete, you can submit your work by zipping your the `buffer-code-exercise-front-end` directory then emailing to us. Please remove the `node_modules` directory before you zip, that won't be necessary 😉. You can use Mac's "create archive" feature, Window's "compressed (zipped) folder," or the zip cli on Linux.
 
 Try to complete the tasks to the best of your ability 😃 Good luck!
 
