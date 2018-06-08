@@ -4,7 +4,7 @@ class AnalyticsSummary extends Component {
   render() {
     return (
       <div className="analytics-summary">
-        TODO
+        hii
       </div>
     )
     return
