@@ -22,9 +22,9 @@ class Update extends Component {
           {this.renderImage(this.props.media)}
         </div>
         <ul className="analytics">
-          <li className="analytics__summary -favorites">{this.props.statistics.favorites}</li>
-          <li className="analytics__summary -clicks">{this.props.statistics.clicks}</li>
-          <li className="analytics__summary -favorites">{this.props.statistics.retweets}</li>
+          <i class="bi bi-like"></i><li className="analytics__summary -favorites">{this.props.statistics.favorites}</li>
+          <i class="bi bi-click"></i><li className="analytics__summary -clicks">{this.props.statistics.clicks}</li>
+          <i class="bi bi-retweet"></i><li className="analytics__summary -favorites">{this.props.statistics.retweets}</li>
         </ul>
         <div className="update-info">
           <div>{this.props.day} at {this.props.due_time}</div>
