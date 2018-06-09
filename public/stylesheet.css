@@ -40,6 +40,7 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 2em;
+  position: relative;
 }
 
 .main-container {
@@ -52,19 +53,42 @@ body {
 }
 
 .update {
-  margin: 0.5em 0;
   border-radius: 0.5em;
   border: 2px solid #f5f5f5;
+  font-size: 2em;
+  margin: 0.5em 0;
+  /* min-height: 41em; */
 }
 
 .update-contents {
+  display: flex;
   padding: 1em;
 }
 
-.update-text {}
+.update-text {
+  margin-right: 2rem;
+}
 
 .update-image {}
 
-.update-info {}
+.update-info {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
 
-.analytics-summary {}
+.analytics {
+  display: flex;
+  list-style-type: none;
+}
+
+.analytics__summary {
+  margin-right: 2rem;
+}
+
+.analytics-summary {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
