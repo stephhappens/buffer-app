@@ -40,6 +40,9 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
 
 
 
@@ -131,26 +134,28 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  position: relative;
   position: absolute;
-  top: 1em;
+  top: 0;
   right: 0;
-  /* width: 95%; */
+  max-width: 23rem;
 }
 
 .analytics-totals {
-  font-size: 2rem;
-  margin-right: 2rem;
+  font-size: 2.2rem;
+  margin-right: 1rem;
 }
 
 .analytics__summary {
   color: #7c858d;
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-right: 2rem;
 }
 
 .bi {
   color: #7c858d;
   margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .analytics-type {
@@ -205,6 +210,11 @@ body {
     font-size: 1.4rem;
     justify-content: space-between;
     padding: 1em;
+  }
+
+  .analytics {
+    max-width: 82%;
+    top: 1em;
   }
 }
 
