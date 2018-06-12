@@ -4,13 +4,13 @@ import Analytics from './Analytics';
 
 class AnalyticsSummary extends Component {
   render() {
+    console.log(this.props);
     return (
       <div className="analytics-bar">
-        <div className="update-list">
-          <Analytics
-            updates = {this.props.updates}
-          />
-      </div>
+      {/* Causes infinite loop */}
+        {/* {this.props.updates && 
+          <AnalyticsSummary updates={this.props.updates} />
+        } */}
       </div>
     )
     return

@@ -11,9 +11,10 @@ class Analytics extends Component {
           <li className="analytics-totals analytics-clicks">30<span className="analytics-type">clicks</span></li>
 
           {/* TODO: Debug why these are returning undefined */}
-          {{/* {this.props.map(function(update, index) {
-          return <li className="analytics__summary -favorites" key={index}>{update.statistics.favorites}</li>
-        })} */}
+          {/* console.log(this.props.updates); */}
+          {/* {this.props.updates.map(function(update, index) {
+            return <li className="analytics__summary -favorites" key={index}>{update.statistics.favorites}</li>
+          })} */}
         </ul>
       </div>
     )
