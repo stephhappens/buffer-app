@@ -41,7 +41,7 @@ class UpdateList extends Component {
             key={idx}
           />
         ))}
-        {this.props.end &&
+        {!this.props.end &&
           <button className="load-more" onClick={this.loadMore}>Load More!</button>
         }
       </div>
