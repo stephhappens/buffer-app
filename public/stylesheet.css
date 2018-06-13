@@ -138,7 +138,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  max-width: 23rem;
+  max-width: 26rem;
 }
 
 .analytics-totals {
@@ -198,11 +198,6 @@ img {
     margin-bottom: 0;
   }
   
-  .update-image {
-    height: 10rem;
-    width: 10rem;
-  }
-  
   .update-info {
     background: #f5f5f5;
     display: flex;
@@ -213,6 +208,7 @@ img {
   }
 
   .analytics {
+    margin-right: 1rem;
     max-width: 82%;
     top: 1em;
   }
@@ -223,7 +219,7 @@ img {
 
 
 /* ///////////////// */
-  /* Desktop Small */
+  /* Desktop Small (1024 px) */
 /* ///////////////// */
 
 @media (min-width: 1024px) { 
@@ -240,13 +236,14 @@ img {
     border: 2px solid #f5f5f5;
     border-radius: .5em;
     flex-direction: column;
-    padding: 1em 4em 1em 1em;
-    right: -3em;
+    margin-right: 2rem;
+    padding: 1em 2em 1em 1em;
+    right: -2em;
     top: 5.3em;
   }
 
   .analytics-totals {
-    font-size: 7em;
+    font-size: 5em;
     font-weight: 800;
   }
 
@@ -271,7 +268,8 @@ img {
   }
 
   .analytics {
-    right: -19em;
-    padding: 1em 8em 1em 1em;
+    right: -16em;
+    margin-right: 3rem;
+    padding: 1em 3em 1em 1em;
   }
 }
