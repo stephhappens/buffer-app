@@ -3,9 +3,18 @@ import actions from  '../actions';
 import Update from  './Update';
 
 class UpdateList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.loadMore = this.loadMore.bind(this);
+  }
+
+  loadMore() {
+    this.props.dispatch({ type: 'LOAD_MORE' });
+  }
 
   render() {
-    if (!this.props.updates || !this.props.updates.length) {
+    if (this.props.end) {
       return <p>You have no updates</p>
     }
     return (
@@ -16,6 +25,9 @@ class UpdateList extends Component {
             key={idx}
           />
         ))}
+        {!this.props.end &&
+          <button className="load-more" role="button" onClick={this.loadMore}>Load More</button>
+        }
       </div>
     )
     return
