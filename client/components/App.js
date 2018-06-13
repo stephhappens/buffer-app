@@ -6,13 +6,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div className="app" role="banner">
         <img
           src="/logo-buffer.svg"
           alt="Buffer"
           className="logo"
+          role="img"
         />
-        <div className="main-container">
+        <div className="main-container" role="main">
           <UpdateList
             updatesLoadedAll={this.props.updatesLoadedAll}
             // Passing Store Data

@@ -53,7 +53,7 @@ class Store {
           })
           .catch(err => console.error('err?', err))
         break;
-        case actions.LOAD_MORE: 
+      case actions.LOAD_MORE:
           const offset = this.state.visible + 10;
 
           Api.get('getUpdates', { offset })
@@ -66,7 +66,7 @@ class Store {
               this.setState('updates', [...this.state.updates, ...updates]);
               this.setState('visible', offset);
             });
-            break;
+          break;
     }
   }
 }

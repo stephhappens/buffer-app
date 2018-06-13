@@ -13,22 +13,6 @@ class UpdateList extends Component {
     this.props.dispatch({ type: 'LOAD_MORE' });
   }
 
-  // componentWillMount() {
-    // TODO: This isn't correct figure out how to grab more data from api
-  //   $get(Update, (res, status) => {
-  //     if (status === 'success') {
-  //       this.setState({
-  //         items: res,
-  //         loaded: true
-  //       });
-  //     } else {
-  //       console.log(status);
-  //       this.setState({
-  //         error: true
-  //       });
-  //     }
-  //   });
-  // }
   render() {
     if (this.props.end) {
       return <p>You have no updates</p>
@@ -42,7 +26,7 @@ class UpdateList extends Component {
           />
         ))}
         {!this.props.end &&
-          <button className="load-more" onClick={this.loadMore}>Load More!</button>
+          <button className="load-more" role="button" onClick={this.loadMore}>Load More</button>
         }
       </div>
     )

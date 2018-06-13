@@ -13,7 +13,6 @@ class Analytics extends Component {
         return acc;
       }
 
-      // TODO: Debug NaN issue on page load_more
       acc.clicks += parseInt(statistics.clicks);
       acc.favorites += parseInt(statistics.favorites);
       acc.retweets += parseInt(statistics.retweets);
@@ -27,7 +26,7 @@ class Analytics extends Component {
     const { clicks, favorites, posts, retweets } = this.summary();
 
     return (
-      <div className="analytics-bar">
+      <div className="analytics-bar" role="complementary">
         <ul className="analytics">
           <li className="analytics-totals analytics-posts">{posts}<span className="analytics-type">posts</span></li>
           <li className="analytics-totals analytics-retweets">{retweets}<span className="analytics-type">retweets</span></li>

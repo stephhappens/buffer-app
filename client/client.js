@@ -6,7 +6,7 @@ import App from './components/App'
 
 const store = new Store({
   updates: [], 
-  visible: 0,
+  visible: 2000,
   error: false,
   end: false
 });
