@@ -30,7 +30,7 @@ class UpdateList extends Component {
   //   });
   // }
   render() {
-    if (!this.props.updates || !this.props.updates.length) {
+    if (this.props.end) {
       return <p>You have no updates</p>
     }
     return (
