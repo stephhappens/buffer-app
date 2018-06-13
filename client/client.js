@@ -4,8 +4,14 @@ import Store from './Store'
 import actions from './actions'
 import App from './components/App'
 
-const store = new Store();
+const store = new Store({
+  updates: [], 
+  visible: 0,
+  error: false,
+  end: false
+});
 
+// Get State from store
 const render = (store) => {
   const props = store.getState()
   // Pass the dispatch method to allow events to be triggered from components

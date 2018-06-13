@@ -15,7 +15,9 @@ class App extends Component {
         <div className="main-container">
           <UpdateList
             updatesLoadedAll={this.props.updatesLoadedAll}
+            // Passing Store Data
             updates={this.props.updates}
+            end={this.props.end}
             dispatch={this.props.dispatch}
           />
           <AnalyticsSummary
