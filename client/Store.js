@@ -47,8 +47,9 @@ class Store {
               this.setState('end', true);
               return;
             }
+
             this.setState('updates', updates);
-            this.setState('visible');
+            this.setState('visible', 10);
           })
           .catch(err => console.error('err?', err))
         break;
